@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="atguigu.com.mysjyy.MainActivity">
+    <!--
+       标题栏···
+    -->
+   <include layout="@layout/tital"/>
+
+    <!--
+    中间内容栏  fragmentLayout
+    -->
+    <FrameLayout
+
+        android:id="@+id/fl_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="80dp"
+            android:text="你好"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <!--
+    底部栏
+    -->
+
+    <RadioGroup
+        android:background="#44000000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:text="本地视频"
+            android:drawableTop="@drawable/select_local_vido"
+            android:id="@+id/rb_local_vido"
+
+            style="@style/bottom_style"
+           />
+
+        <RadioButton
+            android:text="本地音频"
+            android:drawableTop="@drawable/select_local_music"
+            android:id="@+id/rb_local_music"
+
+            style="@style/bottom_style"
+            />
+
+        <RadioButton
+            android:text="网络音乐"
+            android:drawableTop="@drawable/select_net_music"
+            android:id="@+id/rb_net_music"
+
+            style="@style/bottom_style"
+            />
+
+        <RadioButton
+            android:text="网络视频"
+            android:drawableTop="@drawable/select_net_vido"
+            android:id="@+id/rb_net_vido"
+
+            style="@style/bottom_style"
+            />
+
+
+    </RadioGroup>
+</LinearLayout>
