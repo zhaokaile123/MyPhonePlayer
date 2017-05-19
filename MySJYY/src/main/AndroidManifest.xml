@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon2"
-        android:label="@string/app_name"
+        android:label="321手机影音"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".WelcomeActivity">
@@ -15,7 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+
+            >
+
+        </activity>
     </application>
 
 </manifest>

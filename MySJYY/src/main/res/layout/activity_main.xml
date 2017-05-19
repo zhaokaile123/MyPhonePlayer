@@ -24,7 +24,6 @@
         <TextView
             android:layout_gravity="center"
             android:textSize="80dp"
-            android:text="你好"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </FrameLayout>
@@ -34,10 +33,11 @@
     -->
 
     <RadioGroup
+        android:id="@+id/rg_main"
         android:background="#44000000"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="wrap_content">
 
         <RadioButton
             android:text="本地视频"
