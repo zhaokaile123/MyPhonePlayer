@@ -8,6 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    //设置电影播放器的样式
+    <style name="playerStyle" parent="AppTheme">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
     <style name="bottom_style" >
 
         <item name="android:textColor">@drawable/rg_color_select</item>
